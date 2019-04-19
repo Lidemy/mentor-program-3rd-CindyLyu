@@ -3,7 +3,7 @@
 
 for((i=1;i<=$1;i++))
 do
-  touch $((${a}+${i})).js
+  touch ${i}.js
 done
 
 echo $1 個檔案建立完成！
