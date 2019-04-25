@@ -6,4 +6,4 @@ function reverse(str) {
   }
   console.log(c);
 }
-reverse('hello');
+reverse('1,2,3,2,1');

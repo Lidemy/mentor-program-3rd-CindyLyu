@@ -7,4 +7,4 @@ function Capitalize(str) {
   }
 }
 
-console.log(Capitalize('hello'));
+console.log(Capitalize('nick'));

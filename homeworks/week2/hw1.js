@@ -6,4 +6,4 @@ function printStars(n) {
     }
   }
 }
-printStars(1);
+printStars(6);
