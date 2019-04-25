@@ -7,7 +7,7 @@ function search(arr, n) {
     }
   } while (i > 2);
   if (i <= 2 && arr[i] > n) {
-    for (i; i <= arr.length && i >= arr.length; i -= 1) {
+    for (i; i <= arr.length && i >= 0; i -= 1) {
       if (arr[i] === n) {
         return i;
       }
@@ -22,4 +22,4 @@ function search(arr, n) {
   }
   return -1;
 }
-console.log(search([1, 2, 10, 14, 39], 2));
+console.log(search([1, 2, 10, 14, 39], 1));
