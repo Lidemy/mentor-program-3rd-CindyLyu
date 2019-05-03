@@ -1,5 +1,7 @@
 function isPalindromes(str) {
-  console.log(str);
+  let upset = '';
+  for (let i = str.length - 1; i >= 0; i -= 1) {
+    upset += str[i];
+  }
+  return upset === str;
 }
-
-module.exports = isPalindromes;
