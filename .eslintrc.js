@@ -20,7 +20,8 @@ module.exports = {
     'react',
   ],
   rules: {
-    "no-console": "off"
- 
+    "no-console": "off",
+    "no-mixed-spaces-and-tabs": 0,
+    "no-tabs":"off",
   },
 };
