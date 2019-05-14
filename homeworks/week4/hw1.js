@@ -1,12 +1,14 @@
 const request = require('request');
 
 request(
-  'https://lidemy-book-store.herokuapp.com/books',
+  'https://lidemy-book-store.herokuapp.com/books?_limit=10',
   (error, response, body) => {
-    const json = JSON.parse(body);
-    for (let i = 0; i <= 9; i += 1) {
-      const bookName = json[i].name.replace(/'/, '');
-      console.log(`${json[i].id}  ${bookName}`);
+    if (error) {
+      return console.log('發生錯誤', error);
     }
+    const json = JSON.parse(body);
+    return json.forEach((item) => {
+      console.log(`${item.id} ${item.name}`);
+    });
   },
 );

@@ -2,7 +2,7 @@ const request = require('request');
 
 const key = {
   url: 'https://api.twitch.tv/helix/games/top',
-  qs: { first: '100' },
+  qs: { first: 100, name: 'League of Legends' },
   headers: {
     'Client-ID': 'wdplbrt7uhnh4ep6lvk2ogkc1eyw6o',
   },
