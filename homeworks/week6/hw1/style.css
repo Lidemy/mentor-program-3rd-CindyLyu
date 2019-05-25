@@ -1,0 +1,205 @@
+body {
+  margin: 0px;
+}
+
+.nav {
+  padding: 10px 10px;
+  color: #f4f4f4;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  background-image: url("https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.0-9/55937509_388143875073792_4092008079556608000_n.jpg?_nc_cat=109&_nc_ht=scontent.ftpe8-1.fna&oh=8e5a35f190d127025ecc1f49587153b8&oe=5D42C48A");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+nav>div {
+  margin: 0px 7px;
+}
+
+.nav__name {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  padding-right: 8px;
+}
+
+.nav__info:hover, .nav__type:hover, a:hover {
+  color: #e8bda6;
+}
+
+.intr {
+  background-image: url("https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-9/55922070_387829285105251_6567651083219369984_n.jpg?_nc_cat=111&_nc_ht=scontent.ftpe8-3.fna&oh=875ec54a98208388ca42d0d8bbaa9101&oe=5D05F3F0");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intr__mask {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intr__header, .intr__list, .info__contain {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intr__header {
+  color: white;
+  padding: 150px 40px 140px 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.intr__title {
+  text-align: center;
+  font-size: 70px;
+}
+
+hr {
+  margin-bottom: 10px;
+  width: 250px;
+  border: solid 2px #e8bda6;
+  border-radius: 5px;
+}
+
+.intr__summary {
+  text-align: center;
+  padding-top: 3px;
+}
+
+.intr__list-title {
+  text-align: center;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.intr__list-img {
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.original-img {
+  background-image: url("https://instagram.ftpe8-2.fna.fbcdn.net/vp/908aa2b8cd9068af0e9e247d471c9cda/5D4F1FCD/t51.2885-15/e35/42003686_392735404599811_7399732865128797173_n.jpg?_nc_ht=instagram.ftpe8-2.fna.fbcdn.net");
+}
+
+.cheese-img {
+  background-image: url("https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/55901969_388512768370236_7415953234948259840_n.jpg?_nc_cat=101&_nc_ht=scontent.ftpe8-2.fna&oh=70a47d35151c1cc316d06fc6f1b017e2&oe=5D0B39A4");
+}
+
+.choco-img {
+  background-image: url("https://instagram.ftpe8-2.fna.fbcdn.net/vp/a3d15db00c42fb88b19eee683c816447/5D2B1B70/t51.2885-15/e35/39907544_490623331403901_8902822755449037251_n.jpg?_nc_ht=instagram.ftpe8-2.fna.fbcdn.net");
+}
+
+.intr__list-contain {
+  color: #444444;
+}
+
+.intr__list-button::after, .intr__button::after {
+  content: ">>";
+  letter-spacing: 1px;
+}
+
+.intr__container-bg, .intr__container {
+  background-color: white; 
+}
+
+.intr__list {
+  padding: 10px 40px 30px;
+  display: flex;
+}
+
+.intr__list-column {
+  margin: 0px 10px;
+}
+
+.intr__list-title {
+  font-size: 34px;
+  margin-bottom: -3px;
+}
+
+.info__map {
+  background-image: url("https://imgur.com/YNqXdiK.jpg");
+  background-repeat: no-repeat;
+  height: 330px;
+  width: 500px;
+  background-position: center;
+}
+
+.info__bg {
+  background-color: #efc097;
+}
+
+.info__contain {
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efc097;
+}
+
+.info__text {
+  display: inline-block;
+  font-size: 19px;
+}
+
+.info__text>div {
+  margin-top: 10px;
+  color: black;
+}
+
+.info__text>div>a {
+  color: black;
+}
+
+.info__text>div>a:hover, .fab:hover {
+  color: #666666;
+}
+
+span {
+  margin-right: 10px;
+}
+
+.fa-info-circle, .fa-facebook-square, .fa-instagram {
+  margin-left: 2px;
+}
+
+@media screen and (max-width: 831px) {
+  .intr__list {
+    flex-wrap: wrap;
+  }
+  .intr__title {
+    font-size: 50px;
+  }
+  .intr__summary {
+    font-size: 14px;
+  }
+  .info__contain {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .info__map {
+    padding-top: 20px;
+    background-position: 40% 50%;
+  }
+}
