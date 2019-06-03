@@ -1,0 +1,105 @@
+body {
+  margin: 0px;
+  background-color: #EAEAEA;
+}
+
+.bgTop {
+  background-image: url('https://lh4.googleusercontent.com/sAvtic6WzLRcGC485d2irc6Q36VS9GaiIj2TjL9AkbD1t3RjwacfNkJmmUe9fh9c0WV-ZVKQcw=w1200');
+  background-size: cover;
+  height: 300px;
+}
+
+.form__title {
+  font-size: 32px;
+  margin-left: 15px;
+}
+
+.form__info1, .form__info2 {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+input[type='text'] {
+  border-color: transparent transparent #CECECE transparent;
+  border-width: 0.5px;
+  background-color: transparent;
+  width: 300px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.form__required, .form__email, .form__nickName, .form__applyType, .form__job, .form__howToKnow, .form__learningCode, .form__other, .form__button {
+  margin-top: 5px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+[class$='fieldName'] {
+  font-size: 20px;
+}
+
+[type='radio'] {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+[class$='info'] {
+  font-size: 14px;
+}
+
+.form__info, .form__required {
+  font-size: 14px;
+}
+
+.form__required, span {
+  color: #CE4423;
+}
+
+.form {
+  background-color: white;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  max-width: 650px;
+  padding: 40px 30px;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3);
+  border-top: solid 10px #f47742;
+}
+
+.warning-bg {
+  background-color: rgba(243, 172, 155, 0.25);
+  
+}
+
+.warning-text {
+  color: #CE4423;
+  margin-top: 20px;
+}
+
+input.warning-input {
+  border-bottom-color: #CE4423;
+}
+
+.form__applyType-option {
+  cursor: pointer;
+}
+
+.form__button {
+  display: inline-block;
+  background-color: #235FCE;
+  color: white;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+.form__warning {
+  font-size: 12px;
+  color: grey;
+  margin-top: 20px;
+  margin-left: 15px;
+}
