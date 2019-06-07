@@ -1,0 +1,64 @@
+.pickout {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 15px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: #fce5c7;
+  color: #f98f04;
+  transition: 0.3s;
+}
+
+.pickout:hover {
+  background-color: #f9ddb6;
+}
+
+.color__skyblue {
+  background-color: #d6e4fc;
+  color: #6f83a5;
+}
+
+.color__grey {
+  background-color: #c4c4c4;
+  color: #5f5e5e;
+}
+
+.color__orange {
+  background-color: #ffe2b6;
+}
+
+.color__black {
+  background-color: #7c7c7c;
+  color: white;
+}
+
+.prize__info.title {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.prize {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prize__image {
+  width: 200px;
+}
+
+.prize__info {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.prize__point, .prize__credit {
+  margin-top: 50px;
+  font-size: 14px;
+  opacity: 0.5;
+}
