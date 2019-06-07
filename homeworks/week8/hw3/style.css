@@ -1,0 +1,132 @@
+* {
+  /*border: solid 1px red;*/
+  margin: 0px;
+}
+html {
+  background-image: url('https://live.staticflickr.com/905/41675744082_5b372bdd23_b.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-attachment: fixed;
+  height: 310%;
+  width: 100%;
+  disaply: inline-block;
+  position: absolute;
+  z-index: -1;
+}
+
+.live__title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0px 25px 0px;
+  color: white;
+}
+
+.livecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  /*justify-content: center;*/
+  left: 50%;
+  /*top: 50%;*/
+  padding: 0px 0px 0px 10px;
+
+  transform: translateX(-50%);
+  /*margin-left: auto;*/
+  /*margin-left: 10%;*/
+  position: absolute;
+  /*left: 50%;*/
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.livecontent {
+  margin: 15px;
+  max-width: 320px;
+  /*border: solid 1px #666666;*/
+  position: relative;
+  background-color: rgba(70, 70, 70, 0.7);
+  color: white;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.livecontent:hover {
+  box-shadow: 0px 0px 15px rgba(70, 70, 70, 0.9);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.livecontent__viewers {
+  position: absolute;
+  color: white;
+  top: 8px;
+  right: 9px;
+  /*border: solid 1px red;*/
+  background-color: #e26e6c;
+  border-radius: 3px;
+  padding: 4px 4px;
+  /*opacity: 0.8;*/
+  font-size: 12px;
+}
+
+.livecontent:hover .livecontent__viewers {
+  animation: live 1.5s infinite;
+}
+
+@keyframes live {
+  0% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.fa-user {
+  margin-right: 3px;
+}
+
+.livecontent__info {
+  padding: 10px;
+  display: flex;
+}
+
+.livecontent__info-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.livecontent__info-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.livecontent__info-avatar {
+  border-radius: 100%;
+  width: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .livecontainer {
+    width: 1440px; // 當 1440px 時不知為何只能顯示兩列內容
+  }
+}
