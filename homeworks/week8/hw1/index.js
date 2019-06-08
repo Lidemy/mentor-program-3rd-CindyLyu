@@ -28,7 +28,7 @@ function startPlay() {
   pickout.addEventListener('click',
     () => {
       request.onload = () => {
-        if (request.status >= 200 && request.status <= 400) {
+        if (request.status >= 200 && request.status < 400) {
           const data = JSON.parse(request.responseText);
           let url;
           let title;
@@ -40,7 +40,7 @@ function startPlay() {
             case 'FIRST':
               bgColor = 'color__skyblue';
               body.classList.add(bgColor);
-              url = 'ttps://image.flaticon.com/icons/svg/201/201623.svg';
+              url = 'https://image.flaticon.com/icons/svg/201/201623.svg';
               title = '頭獎';
               info = '恭喜你中頭獎了！日本東京來回雙人遊！';
               credit = 'Icon made by Icon Pond from www.flaticon.com';
