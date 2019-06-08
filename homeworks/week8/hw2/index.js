@@ -46,7 +46,7 @@ changePage.onclick = (e) => {
 
 // 當頁面載入時
 request.onload = () => {
-  if (request.status >= 200 && request.status <= 400) {
+  if (request.status >= 200 && request.status < 400) {
     data = JSON.parse(request.responseText);
     page = Math.ceil((data.length) / 20);
     finalId = data.length + 1;
@@ -90,7 +90,7 @@ newpostSubmit.onclick = () => {
   request2.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   request2.send(`content=${storePostInputValue}`);
   request2.onload = () => {
-    if (request2.status >= 200 && request2.status <= 400) {
+    if (request2.status >= 200 && request2.status < 400) {
       alert('留言成功');
       const latestPost = document.createElement('div');
       latestPost.classList.add('messageboard__latestpost');

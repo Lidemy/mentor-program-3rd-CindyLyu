@@ -14,7 +14,7 @@ function viewersConversion(num) {
 }
 
 request.onload = () => {
-  if (request.status >= 200 && request.status <= 400) {
+  if (request.status >= 200 && request.status < 400) {
     const data = JSON.parse(request.responseText);
     for (let i = 0; i < (data.streams).length; i += 1) {
       const liveTitle = data.streams[i].channel.status;
