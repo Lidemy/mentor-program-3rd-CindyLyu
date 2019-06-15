@@ -74,6 +74,13 @@
   border: solid 1px rgba(102, 102, 102, 0.5);
 }
 
+.messageboard__newpost-nicknameregion-time {
+  color: rgba(102, 102, 102, 0.5);
+  font-size: 12px;
+  position: absolute;
+  right: 0px;
+}
+
 [name="messageboard__newpost-content"]:focus, [name="messageboard__login-password"]:focus, [name="messageboard__login-username"]:focus, [name="messageboard__memberdata-nickname"]:focus, [name="messageboard__memberdata-username"]:focus, [name="messageboard__memberdata-password"]:focus {
   outline: solid 3px #86A8D6;
 }
