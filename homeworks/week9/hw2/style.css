@@ -1,0 +1,340 @@
+* {
+  margin: 0px;
+  color: #666;
+  box-sizing: border-box;
+}
+
+.test:before {
+  content: '很廢的用來撐寬用，因為想不到其他可以撐大的方式又可以達到 RWD，敬請見諒';
+  visibility: hidden;
+}
+
+.messageboard {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1100px;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+.messageboard__warning {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.messageboard__title {
+  font-size: 50px;
+  margin: 30px 0px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.messageboard__memberregion {
+  text-align: center;
+  margin-top: 50px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  padding: 20px 30px;
+}
+
+#go_to_sign_up {
+  text-decoration: none;
+  color: #86A8D6;
+}
+
+.fa-comment-alt {
+  margin-left: 20px;
+}
+
+.messageboard__message-success, .messageboard__message-failed {
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 30px;
+  opacity: 0.8;
+  max-width: 340px;
+  margin: 20px auto;
+}
+
+.messageboard__message-success {
+  background-color: #86A8D6;
+}
+
+.messageboard__message-failed {
+  background-color: #d68686;
+}
+
+.messageboard__newpost {
+  margin: 0 auto;
+}
+
+.messageboard__newpost-nicknameregion {
+  display: flex;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+.messageboard__newpost-nicknameregion-time {
+  color: rgba(102, 102, 102, 0.5);
+  font-size: 12px;
+  position: absolute;
+  right: 0px;
+}
+
+[name="messageboard__newpost-content"]:focus, [name="messageboard__login-password"]:focus, [name="messageboard__login-username"]:focus, [name="messageboard__memberdata-nickname"]:focus, [name="messageboard__memberdata-username"]:focus, [name="messageboard__memberdata-password"]:focus {
+  outline: solid 3px #86A8D6;
+}
+
+[name="messageboard__newpost-nicknameregion-name"] {
+  cursor: default;
+  font-size: 16px;
+  color: rgba(102, 102, 102, 0.5);
+}
+
+.messageboard__newpost-submit, [name="messageboard__newpost-nicknameregion-name"]:focus, [name="messageboard__login-submit"]:focus {
+  outline: none;
+}
+
+[name="messageboard__newpost-nicknameregion-name"], [name="messageboard__newpost-content"] {
+  width: 100%;
+  padding: 8px;
+  border: none;
+}
+
+[name="messageboard__newpost-nicknameregion-name"]::placeholder, [name="messageboard__newpost-content"]::placeholder {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+[name="messageboard__login-password"]::placeholder, [name="messageboard__login-username"]::placeholder {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+[name="messageboard__login-password"], [name="messageboard__login-username"] {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+.messageboard__membermessage-login {
+  margin-bottom: 10px;
+}
+
+[name="messageboard__login-submit"] {
+  margin: 20px 0px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  cursor: pointer;
+}
+
+[name="messageboard__login-submit"]:hover {
+  border-color: rgba(102, 102, 102, 1);
+}
+
+.fa-user-alt {
+  padding: 8px;
+}
+
+.messageboard__membermessage-signup {
+  font-size: 14px;
+}
+
+[name="messageboard__newpost-content"] {
+  height: 100px;
+  border-bottom: solid 1px rgba(102, 102, 102, 0.5);
+  border-right: solid 1px rgba(102, 102, 102, 0.5);
+  border-left: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+.messageboard__newpost-submit {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  padding: 5px 15px;
+  font-size: 14px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  border-radius: 3px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.messageboard__newpost-submit:hover {
+  border: solid 1px rgba(102, 102, 102, 1);
+}
+
+.messageboard__signout {
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.messageboard__signout:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.messageboard__line {
+  margin: 70px 0px 20px 0px;
+  border: solid 0.5px rgba(102, 102, 102, 0.2);
+  max-width: 600px;
+  max-width: 95%;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+.messageboard__latestpost-title {
+  font-size: 18px;
+  color: rgba(102, 102, 102, 0.5);
+  margin-bottom: 20px;
+}
+
+.messageboard__latestpost {
+  max-width: 600px;
+  margin-bottom: 20px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  padding: 15px;
+  position: relative;
+}
+
+.messageboard__latestpost:last-child {
+  margin-bottom: 50px;
+}
+
+.messageboard__latestpost-nickname {
+  margin-bottom: 10px;
+  color: rgba(102, 102, 102, 0.5);
+  position: relative;
+}
+
+.messageboard__latestpost-subcontent {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: rgba(102, 102, 102, 0.5);
+  font-size: 14px;
+}
+
+.messageboard__lastpost-subcontent-link {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+[name="messageboard__lastpost-subcontent-commentsid"], .hidden {
+  display: none;
+}
+
+.messageboard__newpost .fa-user-circle {
+  margin: 10px;
+}
+
+.fa-user-circle, .fa-user-astronaut {
+  margin-right: 10px;
+  font-size: 25px;
+  color: rgba(102, 102, 102, 0.5);
+}
+
+.fa-user-astronaut {
+  color: white;
+  background-color: rgba(102, 102, 102, 0.5);
+  border-radius: 50%;
+  over-flow: hidden;
+}
+
+.messageboard__latestpost-content {
+  color: #86A8D6;
+  font-weight: bold;
+}
+
+.back-to-page {
+  text-decoration: none;
+  background-color: #86A8D6;
+  color: white;
+  border: solid 1px none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.info {
+  margin: 30px 20px 20px 20px;
+}
+
+/* 註冊頁面 sign_up.php */
+.messageboard__warning-signup {
+  color: #86A8D6;
+}
+.messageboard__memberdata {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.messageboard__memberdata .fa-user-alt, .messageboard__memberdata .fa-pen, .messageboard__memberdata .fa-lock {
+  margin: 0px 5px;
+  padding: 0px;
+}
+
+.messageboard__memberdata input {
+  margin: 10px 3px;
+  padding: 5px 10px;
+  max-width: 400px;
+  max-height: 100px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+.messageboard__memberdata input::placeholder {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+.messageboard__memberdata:focus {
+  outline: #86A8D6;
+}
+
+div .messageboard__memberdata-submit {
+  width: 200px;
+  cursor: pointer;
+  font-size: 14px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  border-radius: 5px;
+}
+
+.messageboard__memberdata-submit:focus {
+  outline: none;
+}
+
+.messageboard__memberdata-submit:hover {
+  border-color: rgba(102, 102, 102, 1);
+}
+
+@media screen and (max-width: 690px) {
+  .messageboard__title {
+    font-size: 36px;
+  }
+
+@media screen and (max-width: 500px) {
+  .messageboard__title {
+    margin-top: 0px;
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .messageboard__title {
+    margin-top: 0px;
+    font-size: 26px;
+  }
+}
