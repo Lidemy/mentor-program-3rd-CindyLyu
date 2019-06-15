@@ -264,53 +264,6 @@
   margin: 30px 20px 20px 20px;
 }
 
-/* 子留言 */
-.messageboard__latestpost-sbucontentmessage {
-  max-width: 400px;
-  position: relative;
-  left: 5%;
-  margin-top: 20px;
-  background-color: rgba(102, 102, 102, 0.03);
-  padding: 10px;
-}
-
-.messageboard__latestpost-subnewpost {
-  max-width: 400px;
-  position: relative;
-  left: 5%;
-  margin-top: 20px;
-}
-
-.messageboard__latestpost-sbucontentmessage .messageboard__newpost-nicknameregion-time {
-  right: 10px;
-  bottom: 10px;  
-}
-
-.messageboard__latestpost-sbucontentmessage .messageboard__latestpost-content {
-  color: rgba(102, 102, 102, 0.5);
-}
-
-.messageboard__newpost-nicknameregion-time {
-  color: rgba(102, 102, 102, 0.5);
-  font-size: 12px;
-  position: absolute;
-  right: 0px;
-}
-
-.messageboard__latestpost-subnewpost .fa-user-circle {
-  margin: 10px;
-}
-
-.messageboard__latestpost-subnewpost [name="messageboard__newpost-content"] {
-  height: 50px;
-}
-
-.messageboard__latestpost-subnewpost input.messageboard__newpost-submit {
-  position: absolute;
-  right: -80px;
-  top: 20px;
-}
-
 /* 註冊頁面 sign_up.php */
 .messageboard__warning-signup {
   color: #86A8D6;
