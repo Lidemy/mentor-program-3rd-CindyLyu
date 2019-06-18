@@ -8,52 +8,54 @@ function calculator() {
   region.addEventListener('click',
     (e) => {
       const targetId = e.target.id;
-      if (parseInt(e.target.innerText, 10) >= 0) {
-        num += e.target.innerText;
-        result.innerText = num;
-      }
-      if (targetId === 'add') {
-        num2 = num;
-        num = '';
-        status = 0;
-      }
-      if (targetId === 'minus') {
-        num2 = num;
-        num = '';
-        status = 1;
-      }
-      if (targetId === 'mult') {
-        num2 = num;
-        num = '';
-        status = 2;
-      }
-      if (targetId === 'division') {
-        num2 = num;
-        num = '';
-        status = 3;
-      }
-      if (targetId === 'equal') {
-        switch (status) {
-          case 0:
-            result.innerText = parseInt(num, 10) + parseInt(num2, 10);
-            break;
-          case 1:
-            result.innerText = parseInt(num2, 10) - parseInt(num, 10);
-            break;
-          case 2:
-            result.innerText = parseInt(num, 10) * parseInt(num2, 10);
-            break;
-          case 3:
-            result.innerText = parseInt(num2, 10) / parseInt(num, 10);
-            break;
-          default:
-            result.innerText = '出現未預期的錯誤';
+      if (targetId !== '') { // 如果點擊到空白區域不作用，需點擊到按鈕（數字或運算符號）上才會作用
+        if (parseInt(e.target.innerText, 10) >= 0) {
+          num += e.target.innerText;
+          result.innerText = num;
         }
-      }
-      if (targetId === 'AC') {
-        num = '';
-        num2 = '';
-        result.innerText = 0;
+        if (targetId === 'add') {
+          num2 = num;
+          num = '';
+          status = 0;
+        }
+        if (targetId === 'minus') {
+          num2 = num;
+          num = '';
+          status = 1;
+        }
+        if (targetId === 'mult') {
+          num2 = num;
+          num = '';
+          status = 2;
+        }
+        if (targetId === 'division') {
+          num2 = num;
+          num = '';
+          status = 3;
+        }
+        if (targetId === 'equal') {
+          switch (status) {
+            case 0:
+              result.innerText = parseInt(num, 10) + parseInt(num2, 10);
+              break;
+            case 1:
+              result.innerText = parseInt(num2, 10) - parseInt(num, 10);
+              break;
+            case 2:
+              result.innerText = parseInt(num, 10) * parseInt(num2, 10);
+              break;
+            case 3:
+              result.innerText = parseInt(num2, 10) / parseInt(num, 10);
+              break;
+            default:
+              result.innerText = '出現未預期的錯誤';
+          }
+        }
+        if (targetId === 'AC') {
+          num = '';
+          num2 = '';
+          result.innerText = 0;
+        }
       }
     });
 }
