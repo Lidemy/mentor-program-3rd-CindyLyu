@@ -1,12 +1,12 @@
 ## 資料庫欄位型態 VARCHAR 跟 TEXT 的差別是什麼
-都是存字串，通常會用 VARCHAR 存比較短的內容，且會花費 1~3 字節來儲存它的長度，例如 username；而 TEXT 則是拿來存比較長的內容，像是文章，不會花費字節來儲存長度。
+都是存字串，通常會用 VARCHAR 存比較短的內容，可以設定長度，且會花費 1~3 字節來儲存它的長度，例如 username；而 TEXT 則是拿來存比較長的內容，像是文章，不能設定長度，不會花費字節來儲存長度。
 
 
 
 
 ## Cookie 是什麼？在 HTTP 這一層要怎麼設定 Cookie，瀏覽器又會以什麼形式帶去 Server？
-Cookie 是個小型文字檔並且會自動帶去給 Server，可以用來存放一些資料，來識別使用者，也同時可以設定失效的時間。
-在 HTTP 這一層設定 Cookie 的方式，針對不同的程式語言會有不同的設定語法，像是在 PHP 是使用 ```setcookie('name', 'value', expire)``` 函式。
+Cookie 是個小型文字檔裡面可以存放一些資訊來辨識使用者，Server 可以要求設置 Cookie，當之後有新的 request 要發送給 Server 時，瀏覽器也會一起把 Cookie 的資訊帶去給 Server。
+瀏覽器會以包含 Cookie 的名稱、value、時效、path、domain 的內容帶去給 Server。
 
 
 
