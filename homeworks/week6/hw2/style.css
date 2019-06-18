@@ -21,11 +21,18 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.sideregion {
+  position: absolute;
+  left: 150px;
+  top: 150px;
+  height: 800px;
+}
+
 .sideField {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: fixed;
+  position: sticky;
   left: 150px;
   top: 150px;
   width: 135px;
