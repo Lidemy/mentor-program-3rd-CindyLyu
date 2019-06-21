@@ -26,7 +26,7 @@ changePage.onclick = (e) => {
     let startID = dataLength - 1; // 當頁數為 1 時取的第一個 ID 值
     let endID = dataLength - 20; // 當頁數為 1 時取的最後一個 ID 值
     if (clickPage > 1) {
-      startID = dataLength - 21 * (clickPage - 1) + (clickPage - 1) - 1; // 當頁數大於 1 時取的第一個 ID 值
+      startID = dataLength - 21 * (clickPage - 1) + (clickPage - 2); // 當頁數大於 1 時取的第一個 ID 值
       endID = countEnd(dataLength, clickPage); // 當頁數大於 1 時取的最後一個 ID 值
     }
     latestPostRegion.innerHTML = '';
