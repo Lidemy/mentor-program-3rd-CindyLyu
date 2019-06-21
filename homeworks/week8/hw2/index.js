@@ -86,7 +86,7 @@ loadMessage();
 // 提交新留言
 newpostSubmit.onclick = () => {
   const request2 = new XMLHttpRequest();
-  const storePostInputValue = newpostInput.value;
+  const storePostInputValue = encodeURIComponent(newpostInput.value);
   newpostInput.value = '';
   request2.open('POST', 'https://lidemy-book-store.herokuapp.com/posts', true);
   request2.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
