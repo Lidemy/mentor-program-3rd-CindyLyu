@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset='UTF-8'>
-    <title>Week9-Message Board with PHP（Cindy）</title>
+    <title>Week11-Message Board with PHP（Cindy）</title>
     <link rel='stylesheet' href='./style.css'>
   </head>
 </html>
