@@ -12,7 +12,7 @@
       if (isset($_SESSION['user_id']) && $row3['user_id'] == $_SESSION['user_id']) { // 遇到自己的留言時有不同的頭像 icon 及編輯刪除功能
         echo   "<div class='messageboard__latestpost-nickname'><i class='far fa-user-circle'></i>" . escape($row3['nickname']) . "<span class='messageboard__newpost-nicknameregion-time'>" . $row3['created_at'] . "</span></div>";
         echo   "<div><a class='messageboard__latestpost-edit title='編輯留言'><i class='far fa-edit'></i></a></div>";
-        echo   "<form method='POST' action='./handle_delete_sub_comment.php'>";
+        echo   "<form method='POST' action='./handle_delete_comment.php'>";
         echo     "<input name='id'  class='hidden' value='" . $row3['id'] . "'></input>";
         echo     "<div><input class='messageboard__latestpost-delete self" . $row3['id'] . "'' type='submit' title='刪除留言' value=''><i class='far fa-trash-alt'></i></input></div>";
         echo   "</form>";
