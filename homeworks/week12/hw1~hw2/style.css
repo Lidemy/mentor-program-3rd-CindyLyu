@@ -1,0 +1,546 @@
+* {
+  margin: 0px;
+  color: #666;
+  box-sizing: border-box;
+}
+
+
+.messageboard {
+  margin: 0 auto;
+  max-width: 650px;
+  min-width: 300px;
+  margin-top: 20px;
+  position: relative;
+  padding: 0px 10px;
+}
+
+
+.messageboard__warning {
+  opacity: 0.5;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.messageboard__title {
+  font-size: 50px;
+  margin: 50px 0px 30px 0px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.messageboard__memberregion {
+  text-align: center;
+  margin-top: 50px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  padding: 20px 30px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+#go_to_sign_up {
+  color: #86A8D6;
+}
+
+
+.fa-comment-alt {
+  margin-left: 20px;
+}
+
+
+.messageboard__message-success, .messageboard__message-failed {
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 30px;
+  opacity: 0.8;
+  max-width: 340px;
+  margin: 20px auto;
+}
+
+
+.messageboard__message-success {
+  background-color: #86A8D6;
+}
+
+
+.messageboard__message-failed {
+  background-color: #d68686;
+}
+
+
+.messageboard__newpost {
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.messageboard__newpost-nicknameregion {
+  display: flex;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+
+.messageboard__newpost-nicknameregion-time {
+  color: rgba(102, 102, 102, 0.5);
+  font-size: 12px;
+  position: absolute;
+  right: 0px;
+}
+
+
+[name="content"]:focus, [name="password"]:focus, [name="username"]:focus, [name="nickname"]:focus, [name="username"]:focus, [name="password"]:focus, textarea:focus, [name='signup_nickname']:focus, [name='signup_username']:focus, [name='signup_password']:focus {
+  outline: solid 3px #86A8D6;
+}
+
+
+[name="nickname"] {
+  cursor: default;
+  font-size: 16px;
+  color: rgba(102, 102, 102, 0.5);
+}
+
+
+.messageboard__newpost-submit, [name="nickname"]:focus, [name="submit"]:focus {
+  outline: none;
+}
+
+
+[name="nickname"], [name="content"] {
+  width: 100%;
+  padding: 8px;
+  border: none;
+}
+
+
+[name="password"]::placeholder, [name="username"]::placeholder, [name="nickname"]::placeholder, [name="content"]::placeholder {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+
+[name="password"], [name="username"] {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+
+.messageboard__membermessage-login {
+  margin-bottom: 10px;
+}
+
+
+[name="submit"] {
+  margin: 20px 0px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  cursor: pointer;
+}
+
+
+[name="submit"]:hover {
+  border-color: rgba(102, 102, 102, 1);
+}
+
+
+.fa-user-alt {
+  padding: 8px;
+}
+
+
+.messageboard__membermessage-signup {
+  font-size: 14px;
+}
+
+
+[name="content"] {
+  height: 100px;
+  border-bottom: solid 1px rgba(102, 102, 102, 0.5);
+  border-right: solid 1px rgba(102, 102, 102, 0.5);
+  border-left: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+
+.messageboard__newpost-submit {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  padding: 5px 15px;
+  font-size: 14px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  border-radius: 3px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.messageboard__newpost-submit:hover {
+  border: solid 1px rgba(102, 102, 102, 1);
+}
+
+
+.messageboard__signout {
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0px;
+  top: -25px;
+  opacity: 0.5;
+  margin: -15px 10px;
+  outline: none;
+}
+
+
+.messageboard__signout:hover {
+  opacity: 1;
+}
+
+
+.messageboard__line {
+  margin: 70px 0px 20px 0px;
+  border: solid 0.5px rgba(102, 102, 102, 0.2);
+  max-width: 95%;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+
+.messageboard__latestpost-title {
+  font-size: 18px;
+  color: rgba(102, 102, 102, 0.5);
+  margin: 0px auto 20px auto;
+}
+
+
+.messageboard__latestpost {
+  max-width: 650px;
+  margin: 0px auto 20px auto;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  padding: 15px;
+  position: relative;
+  min-height: 113px;
+}
+
+
+.messageboard__latestpost:last-child {
+  margin-bottom: 50px;
+}
+
+
+.messageboard__latestpost-nickname {
+  margin-bottom: 10px;
+  color: rgba(102, 102, 102, 0.5);
+  position: relative;
+}
+
+
+.messageboard__latestpost-subcontent {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: rgba(102, 102, 102, 0.5);
+  font-size: 14px;
+}
+
+
+.messageboard__latestpost textarea {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 48px 8px 8px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+
+.message__latestpost-editarea {
+  max-width: 400px;
+  padding-right: 60px;
+}
+
+
+.message_latestpost-editsubmit {
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 5px;
+  outline: none;
+}
+
+.messageboard__latestpost-delete {
+  position: absolute;
+  right: 18px;
+  top: 90px;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.message_latestpost-editsubmit:hover {
+  border-color: rgba(102, 102, 102, 1);
+}
+
+
+.messageboard__lastpost-subcontent-link {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+
+[name="messageboard__lastpost-subcontent-commentsid"], .hidden {
+  display: none;
+}
+
+
+.messageboard__newpost .fa-user-circle {
+  margin: 10px;
+}
+
+
+.fa-user-circle, .fa-user-astronaut {
+  margin-right: 10px;
+  font-size: 25px;
+  color: rgba(102, 102, 102, 0.5);
+}
+
+
+.fa-edit, .fa-trash-alt {
+  color: rgba(102, 102, 102, 0.5);
+  position: absolute;
+  cursor: pointer;
+}
+
+
+.fa-edit {
+  right: 15px;
+}
+
+
+.fa-trash-alt {
+  right: 18px;
+  top: 90px;
+}
+
+
+.messageboard__latestpost-canceledit {
+  right: 15px;
+  position: absolute;
+  color: #86A8D6;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.messageboard__latestpost-content {
+  color: #86A8D6;
+  font-weight: bold;
+  padding-right: 29px;
+}
+
+
+.info {
+  margin: 30px 20px 20px 20px;
+}
+
+
+.messageboard__page {
+  max-width: 600px;
+  text-align: center;
+  margin: 40px 0px 60px 0px;
+}
+
+
+.messageboard__page-child {
+  border: solid 1px #86A8D6;
+  cursor: pointer;
+  display: inline-block;
+  color: #86A8D6;
+  padding: 2px 9px;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+
+.active {
+  color: white;
+  background-color: #86A8D6;
+  cursor: initial;
+}
+
+
+.messageboard__page-child:hover {
+  color: white;
+  background-color: #86A8D6;
+}
+
+
+/* 子留言 */
+.messageboard__latestpost-sbucontentmessage {
+  max-width: 400px;
+  position: relative;
+  left: 5%;
+  margin-top: 20px;
+  background-color: rgba(102, 102, 102, 0.03);
+  padding: 10px;
+  margin-right: 90px;
+  min-height: 100px;
+}
+
+
+.messageboard__latestpost-subnewpost {
+  max-width: 400px;
+  position: relative;
+  left: 5%;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.messageboard__latestpost-sbucontentmessage .messageboard__newpost-nicknameregion-time {
+  right: 10px;
+  bottom: 10px;  
+}
+
+.messageboard__latestpost-sbucontentmessage .messageboard__latestpost-content {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+.messageboard__newpost-nicknameregion-time {
+  color: rgba(102, 102, 102, 0.5);
+  font-size: 12px;
+  position: absolute;
+  right: 0px;
+}
+
+.messageboard__latestpost-subnewpost .fa-user-circle {
+  margin: 10px;
+}
+
+.messageboard__latestpost-subnewpost [name="content"] {
+  height: 50px;
+  outline: none;
+}
+
+.messageboard__latestpost-subnewpost input.messageboard__newpost-submit {
+  position: absolute;
+  right: 0px;
+  top: 26px;
+  height: 51px;
+}
+
+.messageboard__latestpost-sbucontentmessage.origin {
+    max-width: 400px;
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    background-color: rgba(69, 113, 173, 0.03);
+    padding: 10px;
+}
+
+.origin .messageboard__latestpost-content {
+  color: #86A8D6;
+}
+
+.messageboard__latestpost-sbucontentmessage .fa-edit {
+  top: 40px;
+}
+
+.messageboard__latestpost-sbucontentmessage .fa-trash-alt {
+  top: 75px;
+}
+
+.messageboard__latestpost-sbucontentmessage .messageboard__latestpost-delete {
+  top: 75px;
+}
+
+.messageboard__latestpost-sbucontentmessage .messageboard__latestpost-canceledit {
+  font-size: 12px;
+}
+
+
+/* 註冊頁面 sign_up.php */
+.messageboard__signup {
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 300px;
+  margin-top: 20px;
+  position: relative;
+  padding: 0px 10px;
+}
+
+
+.messageboard__warning-signup {
+  color: #86A8D6;
+  max-width: 750px;
+  padding: 0px 15px;
+}
+
+
+.messageboard__memberdata {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.messageboard__memberdata .fa-user-alt, .messageboard__memberdata .fa-pen, .messageboard__memberdata .fa-lock {
+  margin: 0px 5px;
+  padding: 0px;
+}
+
+
+.messageboard__memberdata input {
+  margin: 10px 3px;
+  padding: 5px 10px;
+  max-width: 400px;
+  max-height: 100px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px rgba(102, 102, 102, 0.5);
+}
+
+
+.messageboard__memberdata input::placeholder {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+
+.messageboard__memberdata:focus {
+  outline: #86A8D6;
+}
+
+
+div .messageboard__memberdata-submit {
+  width: 200px;
+  cursor: pointer;
+  font-size: 14px;
+  border: solid 1px rgba(102, 102, 102, 0.5);
+  border-radius: 5px;
+  outline: none;
+}
+
+
+.messageboard__memberdata-submit:hover {
+  border-color: rgba(102, 102, 102, 1);
+}
+
+
+@media screen and (max-width: 375px) {
+  .messageboard__title {
+    margin-top: 60px;
+    font-size: 40px;
+  }
+}
