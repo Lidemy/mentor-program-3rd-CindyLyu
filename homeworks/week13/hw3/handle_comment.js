@@ -94,7 +94,7 @@ $('.messageboard__latestpost-region').on('click', '.messageboard__newpost-submit
                           </div>`;
   } else {
     latestpostSubContent = `<div class='messageboard__latestpost-sbucontentmessage'><div class='messageboard__latestpost-nickname'><i class='fas fa-user-circle'></i>${nickname}<span class='messageboard__newpost-nicknameregion-time'>${resultDate}</span></div>
-                          <div><a href='./update_comment.php?content=${content}&id='${id}' class='messageboard__latestpost-edit title='編輯留言'><i class='far fa-edit'></i></a></div>
+                          <div><a href='./update_comment.php?content=${content}&id=${id}' class='messageboard__latestpost-edit title='編輯留言'><i class='far fa-edit'></i></a></div>
                           <form>
                           <input name='id' class='hidden' value='${id}'></input>
                           <div><input class='messageboard__latestpost-childdelete self${id}' title='刪除留言' value=''><i class='far fa-trash-alt'></i></input></div>

@@ -69,8 +69,10 @@
           $status = 'login';
           // 已登入時顯示留言區域
           require_once('./conn.php');
-          $sql = "SELECT * FROM CindyLyu_users WHERE id=" . $_SESSION['user_id'];
-          $result = $conn->query($sql);
+          $stmt = $conn->prepare("SELECT * FROM CindyLyu_users WHERE id=?");
+          $stmt->bind_param("i", $_SESSION['user_id']);
+          $stmt->execute();
+          $result = $stmt->get_result();
           $row = $result->fetch_assoc();
           echo "<form class='messageboard__newpost'>";
           include('./add_comment_region.php');
