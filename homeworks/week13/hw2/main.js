@@ -5,7 +5,7 @@ let totalItem = 6; // 目前總項目數
 let item;
 
 // 完成度
-function countProcess() { // 點自己新增的要點到第二個才會計算（待查找原因）
+function countProcess() {
   const completePercentage = Math.round((completeItem / totalItem) * 100);
   $('.progress-bar').css('width', `${completePercentage}%`);
   $('.progress-bar').text(`${completePercentage} %`);

@@ -1,8 +1,9 @@
 ## Bootstrap 是什麼？
-可以用來套用至 UI 的 Library，利用 Boostrap 提供的 CSS 或是 JavaScript，像是按鈕、選單、訊息狀態的一些樣式，甚至是一些輪播Boostrap 提供 JavaScript 加上 CSS 的組件可以使用。
+可以用來套用至 UI 的 Library，利用 Boostrap 提供的 CSS 或是 JavaScript，像是按鈕、選單、訊息狀態的一些樣式，甚至是一些輪播 Boostrap 提供 JavaScript 加上 CSS 的組件可以使用。
 使用方式與自己在製作網站時一樣，找到 Boostrap 提供的連結，用引用連結的方式，例如以下，即可在 HTML 中使用一些 Boostrap 提供的 class 來套用。
 ```html
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+```
 
 
 ## 請簡介網格系統以及與 RWD 的關係

@@ -15,7 +15,7 @@
         echo   "<div class='messageboard__latestpost-nickname'><i class='far fa-user-circle'></i>" . escape($row3['nickname']) . "<span class='messageboard__newpost-nicknameregion-time'>" . $row3['created_at'] . "</span></div>";
         echo   "<div><a href='./update_comment.php?content=" . escape($row3['content']) . "&id=" . $row3['id'] . "' class='messageboard__latestpost-edit title='編輯留言'><i class='far fa-edit'></i></a></div>";
         echo   "<form>";
-        echo     "<input name='id'  class='hidden' value='" . $row3['id'] . "'></input>";
+        echo     "<input name='id' class='hidden' value='" . $row3['id'] . "'></input>";
         echo     "<div><input class='messageboard__latestpost-childdelete self" . $row3['id'] . "'' title='刪除留言'><i class='far fa-trash-alt'></i></input></div>";
         echo   "</form>";
         echo   "<div class='messageboard__latestpost-content self" . $row3['id'] . "'>" . escape($row3['content']) . "</div>";
