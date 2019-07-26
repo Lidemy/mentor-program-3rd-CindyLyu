@@ -30,9 +30,9 @@
   border-bottom: solid 1px grey;
 }
 
-[class^='col'] {
-  border-left: solid 1px grey;
-  width: 100%;
+.col {
+  border: solid 1px grey;
+  width: 8.333%;
 }
 
 [class^='col']:not(:first-child) {
@@ -46,6 +46,7 @@
   [class^='col'] {
     padding-left: 0px;
     border: solid 1px grey;
+    width: 100%;
   }
   .width:after {
     content: '<720px';

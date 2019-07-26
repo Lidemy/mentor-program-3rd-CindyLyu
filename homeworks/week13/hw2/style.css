@@ -48,7 +48,7 @@ input::placeholder {
 
 .progress-bar {
   padding: 5px;
-  width: 90%;
+  width: 50%;
 }
 
 .todolist__content {
