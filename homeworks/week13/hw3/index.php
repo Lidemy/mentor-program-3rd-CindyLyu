@@ -1,3 +1,6 @@
+<?php
+  require_once('./conn.php');
+?>
 <!DOCTYPE HTML>
 
 <html>
@@ -68,7 +71,6 @@
         } else {
           $status = 'login';
           // 已登入時顯示留言區域
-          require_once('./conn.php');
           $stmt = $conn->prepare("SELECT * FROM CindyLyu_users WHERE id=?");
           $stmt->bind_param("i", $_SESSION['user_id']);
           $stmt->execute();
@@ -83,7 +85,6 @@
       <div class='messageboard__latestpost-region'>
       <?php
         // 顯示最新留言
-        require_once('./conn.php');
         $limit = 20;
         $offset = 0;
 
