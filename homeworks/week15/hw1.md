@@ -58,6 +58,7 @@ document.querySelector('.fa-times').addEventListener('click', function(e) {
          - JSON Ajax get 最後的數值 + 100（來避免重複）（此方案無效）
        - 方案三：
          - 找異步的方式（找之前 twitch API 異步的問題，不然網頁跑很慢就不是非同步了）（後來發現之前 twitch 是用別的方式解決，所以此方案也無效）
+         
 (不過以上的方法都還是錯的，在最後改作業有被糾正，感謝)
 
 總之就是要強迫自己列點列出來，不然就是覺得一大堆問題卡在一起，希望這次寫下來可以謹記。
@@ -75,19 +76,19 @@ document.querySelector('.fa-times').addEventListener('click', function(e) {
 
 ### 第十五週：複習週
 - 這週先安排了本週要複習的項目，大致項目如下
-  1. 看之前留言版第二期的 code review 1:1 第二期
-  2. Ajax（拿實例來練習寫）  
-  3. 做網格系統來練習 RWD 
-  4. 研究 week13 同學的 code（用 handle_add 印出結果用 js 來讀取）
-  5. 看直播（因為生病沒跟到所以後續加的）
-  6. 複習前幾週的課程及筆記
-  7. 改作業列出優化的地方
-  8. 看一些的待看的課程影片
-  9. 研究各不同瀏覽器，及歸零的 css
-  10. 玩 google cloud platform（參考 [GlayGao 同學的文章](https://lidemy.github.io/mentor-program-3rd-ClayGao/homeworks/week14/gcpWithLAMP)）
-  11. 網站前後端開發基礎測試
-  12. 玩本週導讀給網站
-  13. 寫作業
+1. 看之前留言版第二期的 code review 1:1 第二期
+2. Ajax（拿實例來練習寫）  
+3. 做網格系統來練習 RWD 
+4. 研究 week13 同學的 code（用 handle_add 印出結果用 js 來讀取）
+5. 看直播（因為生病沒跟到所以後續加的）
+6. 複習前幾週的課程及筆記
+7. 改作業列出優化的地方
+8. 看一些的待看的課程影片
+9. 研究各不同瀏覽器，及歸零的 css
+10. 玩 google cloud platform（參考 [GlayGao 同學的文章](https://lidemy.github.io/mentor-program-3rd-ClayGao/homeworks/week14/gcpWithLAMP)）
+11. 網站前後端開發基礎測試
+12. 玩本週導讀給網站
+13. 寫作業
 
 - 找了政府開放的高鐵剩餘座位 [API](https://ptx.transportdata.tw/MOTC/v2/Rail/THSR/AvailableSeatStatusList/1000) 來練習串接，不過他的排序如果要以時間來排序似乎還要研究如何取到物件中的時間來排序，所以只先串接了很基本的資料，可以在 HTML 上顯示
 - 後來做到上面安排項目的第四點時就嚴重的病號，原本以為感冒，結果是腸胃炎，去掛號排隊看醫生的時候因為發燒覺得頭超痛，整個人超無力很想自私的拜託大家可以先讓我看醫生嗎？（當然只是想在心裡）
