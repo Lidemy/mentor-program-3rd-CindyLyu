@@ -8,47 +8,91 @@
   font-size: 16px;
 }
 
-.width:after {
-  content: '>720px';
-}
-
-.container {
-  border: solid 0.5px grey;
-}
 
 .container {
   max-width: 960px;
-  margin: 10px auto 0px auto;
-  text-align: center;
-  padding: 50px 0px;
-  font-size: 20px;
+  margin: 10px auto 0 auto;
 }
 
-.column {
+
+.row {
   display: flex;
-  justify-content: space-between;
-  border-bottom: solid 1px grey;
 }
+
+
+[class^='col'] {
+  padding: 10px;
+  border: solid 1px grey;
+}
+
 
 .col {
-  border: solid 1px grey;
-  width: 8.333%;
+  width: 8.3333%;
 }
 
-[class^='col']:not(:first-child) {
-  padding-left: 5px;
+
+.col-2 {
+  width: 16.667%;
 }
+
+
+.col-3 {
+  width: 24.999%;
+}
+
+
+.col-4 {
+  width: 33.333%;
+}
+
+
+.col-5 {
+  width: 41.666%;
+}
+
+
+.col-6 {
+  width: 49.999%;
+}
+
+
+.col-7 {
+  width: 58.333%;
+}
+
+
+.col-8 {
+  width: 66.666%;
+}
+
+
+.col-9 {
+  width: 74.999%;
+}
+
+
+.col-10 {
+  width: 83.333%;
+}
+
+
+.col-11 {
+  width: 91.666%;
+}
+
+
+.col-12 {
+  width: 100%;
+}
+
 
 @media screen and (max-width: 720px) {
-  .column {
-    display: inline-block;
-  }
-  [class^='col'] {
+  .row {
+    display: initial;
+  } 
+  div {
     padding-left: 0px;
     border: solid 1px grey;
-    width: 100%;
-  }
-  .width:after {
-    content: '<720px';
+    width: 100% !important;
   }
 }
