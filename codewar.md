@@ -22,30 +22,30 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 
 ## 零顆星（超簡單）
 
-### ❌ Opposite number
+### ✅ Opposite number
 題目連結：https://www.codewars.com/kata/opposite-number/javascript  
 題目說明：正數變負數，反之亦然
 
-### ❌ Even or Odd
+### ✅ Even or Odd
 題目連結：https://www.codewars.com/kata/even-or-odd/javascript  
 題目說明：判斷是奇數或是偶數
 
 ## 一顆星（熟悉語法）
 
-### ❌ Number-Star ladder
+### ✅ Number-Star ladder
 題目連結：https://www.codewars.com/kata/number-star-ladder/javascript  
 題目說明：
 這題就是依照規律輸出文字，沒什麼好講的
 
-### ❌ Who likes it
+### ✅ Who likes it
 題目連結：https://www.codewars.com/kata/who-likes-it  
 題目說明：模擬 Facebook 按讚時或出現的文字
 
-### ❌ String repeat
+### ✅ String repeat
 題目連結：https://www.codewars.com/kata/string-repeat/javascript  
 題目說明：回傳重複 n 遍的字串
 
-### ❌ Build Tower
+### ✅ Build Tower
 題目連結：https://www.codewars.com/kata/build-tower  
 題目說明：
 也是依照規律輸出文字即可
