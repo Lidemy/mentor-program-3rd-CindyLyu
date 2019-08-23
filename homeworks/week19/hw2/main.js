@@ -2,7 +2,7 @@
 
 let list;
 let todoName;
-const baseUrl = 'http://localhost:8080/Week19/hw1/todo.php';
+const baseUrl = 'http://cindylyu.tw/todolist/api/todo.php';
 
 function render() {
   $('.todolist__content').empty();
