@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.todolist {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.todolist__title {
+  margin: 30px 0 20px 0;
+  font-size: 48px;
+  color: grey;
+}
+
+.todolist__additem-input {
+  width: 80%;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.todolist__content-edit {
+  padding: 0px 5px;
+  outline: none;
+}
+
+.todolist__additem-input:focus, .todolist__content-edit:focus {
+  border: solid 2px #6c757d;
+}
+
+input::placeholder {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+.todolist__additem-add {
+  margin-left: 10px;
+  padding: 7px 20px;
+  background-color: rgb(108, 117, 125);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.todolist__additem-add:focus {
+  outline: none;
+}
+
+.todolist__additem-add:hover {
+  background-color: rgba(108, 117, 125, 0.8);
+}
+
+.progress-bar {
+  padding: 5px;
+  width: 50%;
+}
+
+.todolist__content {
+  text-align: left;
+  margin: 20px 0 50px 0;
+  position: relative;
+}
+
+.fa-check-square, .fa-square {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.fa-pen {
+  position: absolute;
+  cursor: pointer;
+  right: 50px;
+  top: 15px;
+}
+
+.fa-times {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.todolist__content-message {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+button.btn-link {
+  font-size: 14px;
+}
