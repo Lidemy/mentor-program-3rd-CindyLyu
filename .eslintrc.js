@@ -24,4 +24,5 @@ module.exports = {
     "no-mixed-spaces-and-tabs": 0,
     "no-tabs":"off",
   },
+  parser: 'babel-eslint'
 };

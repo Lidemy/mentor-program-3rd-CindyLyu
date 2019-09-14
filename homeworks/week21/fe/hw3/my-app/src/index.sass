@@ -1,0 +1,87 @@
+$green_color: #4baea0
+$lieght_green_color: #b6e6bd
+$yellow_color: #f1f0cf
+$red_color: #f0c9c9
+$grey_color: rgb(102, 102, 102)
+
+
+.blog__nav
+  background: $green_color
+  color: white
+  padding: 15px
+
+.blog__nav-name
+  font-size: 24px
+  cursor: default
+
+.blog__nav-list
+  margin-left: 25px
+  font-size: 20px
+
+.blog__nav-about
+  margin-left: 15px
+  font-size: 20px
+
+item:not(.blog__nav-name)
+  cursor: pointer
+  &:hover
+    color: rgba(255, 255, 255, 0.9)
+
+.blog__list
+  position: absolute
+  margin-left: 50%
+  transform: translateX(-50%)
+  margin-top: 30px
+
+.blog__list-title
+  font-size: 24px
+  text-align: center
+  color: $grey_color
+  font-weight: bold
+  margin-bottom: 30px
+
+.fa-list-ul
+  margin-right: 10px
+
+.blog__list-aritcle
+  margin-top: 10px
+  padding: 10px
+  background: $red_color
+  cursor: pointer
+  &:hover
+    background: #F1BCBC
+  &:nth-last-child(1)
+    margin-bottom: 30px
+
+.blog__article
+  margin-left: 50%
+  transform: translateX(-50%)
+  color: $grey_color
+
+.blog__article-title
+  font-weight: bold
+  font-size: 20px
+  margin: 30px 0px
+
+.blog__about
+  margin-left: 50%
+  transform: translateX(-50%)
+
+.fa-user-alt
+  border: solid 2px $grey_color
+  border-radius: 50%
+  padding: 20px
+  font-size: 50px
+  color: $grey_color
+  text-align: center
+  margin-left: 50%
+  transform: translateX(-50%)
+  margin-top: 30px
+  margin-bottom: 20px
+
+.blog__about-title
+  text-align: center
+  margin-bottom: 20px
+
+.blog__abount-content
+  text-align: center

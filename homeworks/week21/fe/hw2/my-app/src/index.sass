@@ -1,0 +1,156 @@
+@mixin size($w,$h)
+  width: $w
+  height: $h
+
+$grey_color: #666666
+
+
+.gomoku
+  position: absolute
+  transform: translate(-50%)
+  left: 50%
+  max-width: 800px
+  margin-top: 20px
+
+.gomoku__title
+  color: $grey_color
+  font-size: 50px
+  font-weight: bold
+  position: relative
+
+.fa-circle
+  font-size: 20px
+  margin-left: 10px
+
+.gomoku__title-circle
+  color: white
+  border: solid 1px $grey_color
+  opacity: 0.7
+  border-radius: 100%
+  +size(18px,18px)
+  display: inline-block
+  position: absolute
+  top: 20px
+
+.gomoku__gameboard, .gomoku__content
+  position: relative
+
+.gomoku__gameboard-outer
+  margin-top: 20px
+  +size(360px,360px)
+  border: solid 1px $grey_color
+  display: inline-block
+
+.gomoku__gameboard-horizontal
+  border: solid 1px $grey_color
+  display: inline-block
+  +size(320px,360px)
+  position: absolute
+  top: 20px
+  left: 20px
+
+.two
+  +size(280px,360px)
+  left: 40px
+
+.three
+  +size(240px,360px)
+  left: 60px
+
+.four
+  +size(200px,360px)
+  left: 80px
+
+.five
+  +size(160px,360px)
+  left: 100px
+
+.six
+  +size(120px,360px)
+  left: 120px
+
+.seven
+  +size(80px,360px)
+  left: 140px
+
+.eight
+  +size(40px,360px)
+  left: 160px
+
+.nine
+  +size(0px,360px)
+  left: 180px
+
+.gomoku__gameboard-vertical
+  border: solid 1px $grey_color
+  display: inline-block
+  +size(360px,320px)
+  position: absolute
+  bottom: 25px
+  left: 0px
+
+.v-two
+  +size(360px,40px)
+  top: 180px
+
+.v-three
+  +size(360px,280px)
+  top: 60px
+
+.v-four
+  +size(360px,240px)
+  top: 80px
+
+.v-five
+  +size(360px,200px)
+  top: 100px
+
+.v-six
+  +size(360px,160px)
+  top: 120px
+.v-seven
+  +size(360px,120px)
+  top: 140px
+.v-eight
+  +size(360px,80px)
+  top: 160px
+.v-nine
+  +size(360px,80px)
+  top: 160px
+
+.center
+  +size(360px, 0px)
+  top: 200px
+
+[class^="gomoku__content-piece-L"]
+  border: solid 1px $grey_color
+  border-radius: 100%
+  +size(20px,20px)
+  display: inline-block
+  position: absolute
+  background: white
+  top: -77px
+  left: 10.6px
+  cursor: pointer
+  &:focus
+    outline: none
+
+.gomoku__content-turn,.gomoku__content-result
+  padding-top: 5px
+  text-align: right
+
+.gomoku__content-tips
+  color: $grey_color
+  padding-top: 5px
+
+// 之後製作重新開始 button 用
+// .gomoku__content-restart
+//   border: solid 1px $grey_color
+//   padding: 5px 10px
+//   margin-top: 10px
+//   display: inline-block
+//   cursor: pointer
+//   text-align: right
+//   &:hover
+//     background: $grey_color
+//     color: white
