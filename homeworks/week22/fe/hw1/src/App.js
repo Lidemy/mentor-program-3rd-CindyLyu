@@ -3,7 +3,7 @@ import './index.sass';
 import BlogList from './BlogList';
 import BlogArticle from './BlogArticle';
 import BlogAbout from './BlogAbout';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 
 function App() {
