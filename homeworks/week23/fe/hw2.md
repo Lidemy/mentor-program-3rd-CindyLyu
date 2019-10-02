@@ -19,7 +19,10 @@ Single Page Application 簡稱 SPA，是單頁式應用，無論要顯示什麼�
 有哪些頁面一定會使用到 SPA，像是播放音樂的網站，如果用以往的設計會換頁，就會讓音樂暫停，這樣使用體驗就不太好。
 
 
+<<<<<<< HEAD
 ## Reference
 - 程式導師實驗計畫第二期：Week14-1 Redux
 - 程式導師實驗計畫：Lesson 13-1 之 React + Redux
 - [Redux-Common ways of calling ```connect```](https://react-redux.js.org/introduction/basic-tutorial#common-ways-of-calling-connect)
+=======
+>>>>>>> 3f956f0310b8835f5bea977b6cf7f599a25bd823
